@@ -8,3 +8,24 @@
     font-size: 1.5rem;
     font-weight: 700;
 }
+
+.gh-theme-toggle {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    border: 0;
+    background: none;
+    cursor: pointer;
+    color: inherit;
+    opacity: 0.65;
+    transition: opacity 0.2s ease;
+}
+
+.gh-theme-toggle:hover {
+    opacity: 1;
+}
+
+.gh-theme-toggle svg {
+    display: none;
+}
