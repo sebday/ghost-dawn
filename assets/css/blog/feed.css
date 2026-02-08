@@ -73,10 +73,31 @@
     display: none;
 }
 
-.feed-length {
-    font-size: 1.4rem;
+.feed-tags {
+    display: flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.feed-tag {
+    font-size: 1.2rem;
+    font-weight: 700;
     color: var(--secondary-text-color);
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 0.02em;
     white-space: nowrap;
+    transition: color 0.2s ease;
+}
+
+.feed-tag:hover {
+    color: var(--brand-color);
+}
+
+.feed-tag:not(:last-child)::after {
+    content: "·";
+    margin-left: 0.5rem;
+    color: var(--light-gray-color);
 }
 
 .feed-icon {

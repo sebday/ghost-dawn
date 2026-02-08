@@ -13,8 +13,10 @@
 
     <div class="feed-right">
         {{> "icons/star"}}
-        <div class="feed-length">
-            {{reading_time}}
+        <div class="feed-tags">
+            {{#foreach tags limit="3"}}
+                <a href="{{url}}" class="feed-tag">{{name}}</a>
+            {{/foreach}}
         </div>
     </div>
 
