@@ -127,10 +127,11 @@
         </div>
     </header>
 
+    {{#if @custom.show_tag_summary}}
+        {{> "tag-summary"}}
+    {{/if}}
+
     {{#is "home"}}
-        {{#if @custom.show_tag_summary}}
-            {{> "tag-summary"}}
-        {{/if}}
         {{#if @custom.show_featured_posts}}
             {{> "featured-posts"}}
         {{/if}}
